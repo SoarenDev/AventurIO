@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac9a1692095e5c4db75f1749953b601, type: 3}
+  m_Name: 51_temple_ruins
+  m_EditorClassIdentifier: 
+  clear_global_events: 0
+  add_global_events: 0
+  id: 51
+  type: 3
+  sprite: {fileID: 21300000, guid: b55eea190fa992d4280da287fe524331, type: 3}
+  sprite_color: {r: 0.9622642, g: 0.85898554, b: 0.27687788, a: 1}
+  min_npc: 3
+  max_npc: 7
+  name_list:
+  - temple ruins
+  level_default: 
+  events_default: 01000000020000000300000004000000050000001400000015000000160000001700000018000000
+  part_of_npcs_in_faction: 1
+  min_faction: 1
+  max_faction: 1
+  faction_genList_default:
+  - key: {fileID: 11400000, guid: 27785a47270390a4b872df6773debe85, type: 2}
+    value: 15
+  - key: {fileID: 11400000, guid: bfcfbb3fdd53dd74286a8df085022744, type: 2}
+    value: 8
+  - key: {fileID: 11400000, guid: 2b06ff7289c553f40ad671c3b112fc60, type: 2}
+    value: 10
+  - key: {fileID: 11400000, guid: acd3cccecb3db1c4095208ec060c8aa0, type: 2}
+    value: 30

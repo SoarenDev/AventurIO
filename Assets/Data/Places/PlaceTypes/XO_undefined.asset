@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac9a1692095e5c4db75f1749953b601, type: 3}
+  m_Name: XO_undefined
+  m_EditorClassIdentifier: 
+  id: -1
+  type: 6
+  sprite: {fileID: 21300000, guid: 488e6e976ae367b42899a6bbe68d7c35, type: 3}
+  sprite_color: {r: 1, g: 1, b: 1, a: 1}
+  min_npc: 0
+  max_npc: 0
+  name_list: []
+  level_default: 
+  events_default: 
+  part_of_npcs_in_faction: 0
+  min_faction: 0
+  max_faction: 0
+  faction_genList_default: []

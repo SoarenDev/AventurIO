@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac9a1692095e5c4db75f1749953b601, type: 3}
+  m_Name: 40_default_forest
+  m_EditorClassIdentifier: 
+  clear_global_events: 0
+  add_global_events: 0
+  id: 40
+  type: 4
+  sprite: {fileID: 21300000, guid: 3eb02dddf8091c541805c98440dd555a, type: 3}
+  sprite_color: {r: 0.1, g: 0.7, b: 0.1, a: 1}
+  min_npc: 1
+  max_npc: 2
+  name_list: []
+  level_default: 
+  events_default: 01000000020000000300000004000000050000001400000015000000160000001700000018000000
+  part_of_npcs_in_faction: 0.9
+  min_faction: 0
+  max_faction: 1
+  faction_genList_default:
+  - key: {fileID: 11400000, guid: 111c54ac8d66331499be579275a74192, type: 2}
+    value: 10

@@ -1,0 +1,1182 @@
+fileFormatVersion: 2
+guid: f2f0ce15e7b43c349b8588c9895d585a
+timeCreated: 1516802718
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Mobile_Final_Fantasy_Record_Keeper_Mog_0
+    21300002: Mobile_Final_Fantasy_Record_Keeper_Mog_1
+    21300004: Mobile_Final_Fantasy_Record_Keeper_Mog_2
+    21300006: Mobile_Final_Fantasy_Record_Keeper_Mog_3
+    21300008: Mobile_Final_Fantasy_Record_Keeper_Mog_4
+    21300010: Mobile_Final_Fantasy_Record_Keeper_Mog_5
+    21300012: Mobile_Final_Fantasy_Record_Keeper_Mog_6
+    21300014: Mobile_Final_Fantasy_Record_Keeper_Mog_7
+    21300016: Mobile_Final_Fantasy_Record_Keeper_Mog_8
+    21300018: Mobile_Final_Fantasy_Record_Keeper_Mog_9
+    21300020: Mobile_Final_Fantasy_Record_Keeper_Mog_10
+    21300022: Mobile_Final_Fantasy_Record_Keeper_Mog_11
+    21300024: Mobile_Final_Fantasy_Record_Keeper_Mog_12
+    21300026: Mobile_Final_Fantasy_Record_Keeper_Mog_13
+    21300028: Mobile_Final_Fantasy_Record_Keeper_Mog_14
+    21300030: Mobile_Final_Fantasy_Record_Keeper_Mog_15
+    21300032: Mobile_Final_Fantasy_Record_Keeper_Mog_16
+    21300034: Mobile_Final_Fantasy_Record_Keeper_Mog_17
+    21300036: Mobile_Final_Fantasy_Record_Keeper_Mog_18
+    21300038: Mobile_Final_Fantasy_Record_Keeper_Mog_19
+    21300040: Mobile_Final_Fantasy_Record_Keeper_Mog_20
+    21300042: Mobile_Final_Fantasy_Record_Keeper_Mog_21
+    21300044: Mobile_Final_Fantasy_Record_Keeper_Mog_22
+    21300046: Mobile_Final_Fantasy_Record_Keeper_Mog_23
+    21300048: Mobile_Final_Fantasy_Record_Keeper_Mog_24
+    21300050: Mobile_Final_Fantasy_Record_Keeper_Mog_25
+    21300052: Mobile_Final_Fantasy_Record_Keeper_Mog_26
+    21300054: Mobile_Final_Fantasy_Record_Keeper_Mog_27
+    21300056: Mobile_Final_Fantasy_Record_Keeper_Mog_28
+    21300058: Mobile_Final_Fantasy_Record_Keeper_Mog_29
+    21300060: Mobile_Final_Fantasy_Record_Keeper_Mog_30
+    21300062: Mobile_Final_Fantasy_Record_Keeper_Mog_31
+    21300064: Mobile_Final_Fantasy_Record_Keeper_Mog_32
+    21300066: Mobile_Final_Fantasy_Record_Keeper_Mog_33
+    21300068: Mobile_Final_Fantasy_Record_Keeper_Mog_34
+    21300070: Mobile_Final_Fantasy_Record_Keeper_Mog_35
+    21300072: Mobile_Final_Fantasy_Record_Keeper_Mog_36
+    21300074: Mobile_Final_Fantasy_Record_Keeper_Mog_37
+    21300076: Mobile_Final_Fantasy_Record_Keeper_Mog_38
+    21300078: Mobile_Final_Fantasy_Record_Keeper_Mog_39
+    21300080: Mobile_Final_Fantasy_Record_Keeper_Mog_40
+    21300082: Mobile_Final_Fantasy_Record_Keeper_Mog_41
+    21300084: Mobile_Final_Fantasy_Record_Keeper_Mog_42
+    21300086: Mobile_Final_Fantasy_Record_Keeper_Mog_43
+    21300088: Mobile_Final_Fantasy_Record_Keeper_Mog_44
+    21300090: Mobile_Final_Fantasy_Record_Keeper_Mog_45
+    21300092: Mobile_Final_Fantasy_Record_Keeper_Mog_46
+    21300094: Mobile_Final_Fantasy_Record_Keeper_Mog_47
+    21300096: Mobile_Final_Fantasy_Record_Keeper_Mog_48
+    21300098: Mobile_Final_Fantasy_Record_Keeper_Mog_49
+    21300100: Mobile_Final_Fantasy_Record_Keeper_Mog_50
+    21300102: Mobile_Final_Fantasy_Record_Keeper_Mog_51
+    21300104: Mobile_Final_Fantasy_Record_Keeper_Mog_52
+    21300106: Mobile_Final_Fantasy_Record_Keeper_Mog_53
+    21300108: Mobile_Final_Fantasy_Record_Keeper_Mog_54
+    21300110: Mobile_Final_Fantasy_Record_Keeper_Mog_55
+    21300112: Mobile_Final_Fantasy_Record_Keeper_Mog_56
+    21300114: Mobile_Final_Fantasy_Record_Keeper_Mog_57
+    21300116: Mobile_Final_Fantasy_Record_Keeper_Mog_58
+    21300118: Mobile_Final_Fantasy_Record_Keeper_Mog_59
+    21300120: Mobile_Final_Fantasy_Record_Keeper_Mog_60
+    21300122: Mobile_Final_Fantasy_Record_Keeper_Mog_61
+    21300124: Mobile_Final_Fantasy_Record_Keeper_Mog_62
+    21300126: Mobile_Final_Fantasy_Record_Keeper_Mog_63
+    21300128: Mobile_Final_Fantasy_Record_Keeper_Mog_64
+    21300130: Mobile_Final_Fantasy_Record_Keeper_Mog_65
+    21300132: Mobile_Final_Fantasy_Record_Keeper_Mog_66
+    21300134: Mobile_Final_Fantasy_Record_Keeper_Mog_67
+    21300136: Mobile_Final_Fantasy_Record_Keeper_Mog_68
+    21300138: Mobile_Final_Fantasy_Record_Keeper_Mog_69
+    21300140: Mobile_Final_Fantasy_Record_Keeper_Mog_70
+    21300142: Mobile_Final_Fantasy_Record_Keeper_Mog_71
+    21300144: Mobile_Final_Fantasy_Record_Keeper_Mog_72
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 231
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 232
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_2
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 234
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_3
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 234
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 206
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_5
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 208
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 210
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_7
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 212
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 181
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_9
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 182
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_10
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 188
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_11
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 190
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 156
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_13
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 158
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_14
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 166
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_15
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 173
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_16
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 134
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_17
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 144
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_18
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 156
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 132
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_20
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 135
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_21
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 139
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_22
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 140
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_23
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 108
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_24
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 108
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_25
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 111
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_26
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 122
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_27
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 122
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_28
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 124
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_29
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 105
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_30
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 106
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_31
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 111
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_32
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 84
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_33
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 85
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_34
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 88
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_35
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 88
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_36
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 90
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_37
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 93
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_38
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 98
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_39
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 66
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_40
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 77
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_41
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 80
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_42
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 80
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_43
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 85
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_44
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 60
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_45
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 62
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_46
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 62
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_47
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 68
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_48
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 68
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_49
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 72
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_50
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 36
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_51
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 39
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_52
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 39
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_53
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 39
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_54
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 44
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_55
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 55
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_56
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 55
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_57
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 47
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_58
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 22
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_59
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 34
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_60
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 40
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_61
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 12
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_62
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 16
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_63
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 16
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_64
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 17
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_65
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 27
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_66
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 27
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_67
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 3
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_68
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 20
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_69
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_70
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_71
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile_Final_Fantasy_Record_Keeper_Mog_72
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

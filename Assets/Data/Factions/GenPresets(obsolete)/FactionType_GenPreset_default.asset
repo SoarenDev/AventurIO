@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f72b968bedd1d124b829d64874a1108a, type: 3}
+  m_Name: FactionType_GenPreset_default
+  m_EditorClassIdentifier: 
+  ChancesPerType:
+  - key: {fileID: 11400000, guid: 52d7e0e8f37048e40b5d914938d958cd, type: 2}
+    value: 30
+  - key: {fileID: 11400000, guid: 6c4f26012fefd724c99c4459ae5dd642, type: 2}
+    value: 25
+  - key: {fileID: 11400000, guid: 111c54ac8d66331499be579275a74192, type: 2}
+    value: 20
+  errorType: {fileID: 11400000, guid: 8aa6b57c0adaedd47b928912d0a17c7d, type: 2}
