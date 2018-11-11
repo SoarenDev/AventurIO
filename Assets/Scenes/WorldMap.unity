@@ -6593,6 +6593,7 @@ MonoBehaviour:
   shoot_cooldown: 0
   gold_ui_trans_value: 0
   player_controller: {fileID: 1869201689}
+  interaction_controller: {fileID: 1869201693}
 --- !u!1 &1911593953 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1232140043234540, guid: 3aefa3a58f13be448bf9ba949ac8fa25,
@@ -7135,6 +7136,7 @@ MonoBehaviour:
   questCheck_refresh_delay: 1
   age_range_min: 16
   age_range_max: 64
+  INT_scene_name: SC_PlaceInteriorDefault
   ui_interact_image: {fileID: 444049825}
   UI_placeMenu: {fileID: 537627123}
   UI_placeTab: {fileID: 1409440416}
@@ -7143,6 +7145,7 @@ MonoBehaviour:
   ui_player_hud_parent: {fileID: 487844073}
   txt_player_gold: {fileID: 491349132}
   player_reference: {fileID: 1869201695}
+  main_canvas_reference: {fileID: 1437263930}
 --- !u!114 &2137592423
 MonoBehaviour:
   m_ObjectHideFlags: 0

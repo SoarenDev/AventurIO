@@ -7,6 +7,8 @@ TagManager:
   - place
   - region
   - case
+  - io
+  - npc
   layers:
   - Default
   - TransparentFX

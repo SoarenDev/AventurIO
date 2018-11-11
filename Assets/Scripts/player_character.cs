@@ -8,35 +8,36 @@ public class player_character : MonoBehaviour {
 // = = = [ VARIABLES DEFINITION ] = = =
 
 [Space(10)][Header("Data")]
-	public	 		List<cl_quest>		accepted_quests				= new List<cl_quest>();
+	public	 		List<cl_quest>				accepted_quests						= new List<cl_quest>();
 	
 [Space(10)][Header("Attributes")]
-	public			int					health						;
-	public			int					stamina						;
-	public			int					experience					;
-	public			int					gold						;
+	public			int							health								;
+	public			int							stamina								;
+	public			int							experience							;
+	public			int							gold								;
 		
 	[Space(5)]
-	public			int					exp_level					= 1;
+	public			int							exp_level							= 1;
 
 [Space(10)][Header("Usuals")]
-	public			float				shoot_cooldown				;
-	public			float				gold_ui_trans_value 		;
+	public			float						shoot_cooldown						;
+	public			float						gold_ui_trans_value 				;
 
 [Space(10)][Header("References")]
-	public			PlayerController	player_controller			;
+	public			PlayerController			player_controller					;
+	public			scr_InteractionController	interaction_controller				;
 
 // = = =
 
 // = = = [ VARIABLES PROPERTIES ] = = =
 
-	public			int					Experience
+	public	int		Experience
 		{
 			get { return experience; }
 			set { experience = value; CheckLevelUp();}
 		}
 
-	public			int					Gold
+	public	int		Gold
 		{
 			get { return gold; }
 			set { 
@@ -91,6 +92,16 @@ public class player_character : MonoBehaviour {
 
 		// re-check if character gained enough experience to gain one more level after this one
 		CheckLevelUp();
+		return;
+	}
+
+	/// <summary>
+	/// Instantly moves the player at the given world position.
+	/// </summary>
+	public	void	SpawnPlayer(Vector3 spawn_position)
+	{
+		transform.SetPositionAndRotation(spawn_position, Quaternion.identity);
+
 		return;
 	}
 

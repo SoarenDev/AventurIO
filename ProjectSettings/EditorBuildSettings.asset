@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WorldMap.unity
     guid: 3f54022b04ba27240bc45e7b13180b95
+  - enabled: 1
+    path: Assets/Scenes/SC_PlaceInteriorDefault.unity
+    guid: aa4fc50f9468dbf4f84b33524155620b
   m_configObjects: {}

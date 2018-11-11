@@ -102,6 +102,7 @@ public class scr_UI_placeMenu : scr_UI_parent {
 	public void		BT_EnterPlace()			// 0
 	{
 		Debug.Log("ENTER PLACE METHOD");
+		GameManager.instance.INT_EnterPlace(GameManager.ui_active_place);
 	}
 
 	/// <summary>

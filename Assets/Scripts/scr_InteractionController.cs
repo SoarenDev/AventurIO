@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class scr_InteractionController : MonoBehaviour {
+public class scr_InteractionController : MonoBehaviour 
+{
 
 	public	List<GameObject>	IO_in_range			= new List<GameObject>();		// interactible objects in range
 	public	int					targeted_IO_index 	= -1;
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.gameObject.tag == "npc" || other.gameObject.tag == "place")
+		if (other.gameObject.tag == "npc" || other.gameObject.tag == "place" || other.gameObject.tag == "io")
 		{
 			// activate UI element if there are not any IO already in range when we add one
 			if (IO_in_range.Count == 0) { GameManager.instance.ui_interact_image.SetActive(true); }
@@ -22,7 +23,7 @@ public class scr_InteractionController : MonoBehaviour {
 
 	void OnTriggerExit2D(Collider2D other)
 	{
-		if (other.gameObject.tag == "npc" || other.gameObject.tag == "place")
+		if (other.gameObject.tag == "npc" || other.gameObject.tag == "place" || other.gameObject.tag == "io")
 		{
 			IO_in_range.Remove(other.gameObject);
 			// other.gameObject.SendMessage("OutRange");
@@ -70,5 +71,19 @@ public class scr_InteractionController : MonoBehaviour {
 			}
 		}
 		return actualCloser_index;
+	}
+
+	/// <summary>
+	/// Instantly clears the IO list. 
+	/// </summary>
+	public void ClearInrangeList()
+	{
+		// clear the list
+		IO_in_range.Clear();
+
+		// force disable the interaction indicator
+		GameManager.instance.ui_interact_image.SetActive(false);
+
+		return;
 	}
 }

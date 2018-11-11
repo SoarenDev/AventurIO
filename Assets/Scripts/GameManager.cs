@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -12,12 +13,16 @@ public static GameManager instance;
 
 [Space(10)][Header("Data")]
 	public	static 	scr_place			ui_active_place				;
+	public	static 	scr_place			INT_active_place			;			// buffer variable used, when entering in a place, to keep the reference of this place
 
 //[Space(10)][Header("References")]
 
 [Space(10)][Header("NPC generation")]
 	public			int					age_range_min				= 16;
 	public			int					age_range_max				= 64;
+
+[Space(10)][Header("Interiors")]
+	public			string				INT_scene_name				;
 
 [Space(10)][Header("UI")]
 	public 	 		GameObject			ui_interact_image			;
@@ -33,6 +38,7 @@ public static GameManager instance;
 
 [Space(10)][Header("References")]
 	public			player_character	player_reference			;
+	public			GameObject			main_canvas_reference		;
 
 	void Awake () {
 
@@ -40,7 +46,7 @@ public static GameManager instance;
 		{
 			instance = this;
 		} else {
-			Destroy(this);
+			Destroy(this.gameObject);
 		}
 
 		
@@ -51,6 +57,11 @@ public static GameManager instance;
 	{
 		// Start QuestCheck Coroutine
 		StartCoroutine("QuestCheck_Coroutine");
+
+		// Lock global objects through scenes
+		DontDestroyOnLoad(this);
+		DontDestroyOnLoad(main_canvas_reference);
+		DontDestroyOnLoad(player_reference.gameObject);
 
 	}
 
@@ -237,6 +248,54 @@ public static GameManager instance;
 		// DataManager.instance.npc_list.Remove(npc);
 
 		Debug.Log("NPC CLEARED FROM GAME BUT NOT FROM DATA!");
+		return;
+	}
+
+// = = =
+
+// = = = PLACE INTERIOR MANAGEMENT = = =
+
+	/// <summary>
+	/// Sets the targeted place as the static INT_active_place, and load the interior scene.
+	/// <param name="target_place"> place which interior will be load </param>
+	/// </summary>
+	public	void	INT_EnterPlace(scr_place target_place)
+	{
+		Debug.Log("Entering " + target_place.name + " ...");
+		// set the static variable
+		INT_active_place = target_place;
+
+		// close UI tabs
+		UI_Close(UI_active_menu);
+
+		// empty player in-range interaction list
+		player_reference.interaction_controller.ClearInrangeList();
+
+		// open scene
+		SceneManager.LoadScene(INT_scene_name);
+
+		return;
+	}
+
+	/// <summary>
+	/// Moves the player back to the worldmap scene.
+	/// </summary>
+	public	void	INT_LeavePlace()
+	{
+		Debug.Log("Leaving the place...");
+
+		// set the static variable
+		INT_active_place = null;
+
+		// close UI tabs
+		UI_Close(UI_active_menu);
+
+		// empty player in-range interaction list
+		player_reference.interaction_controller.ClearInrangeList();
+
+		// open scene
+		SceneManager.LoadScene("WorldMap");
+
 		return;
 	}
 
