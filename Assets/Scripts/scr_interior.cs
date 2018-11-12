@@ -11,11 +11,13 @@ public class scr_interior : MonoBehaviour
 [Space(10)][Header("Data")]
 	public	scr_place				linked_place					;
 
+[Space(10)][Header("Content")]
+	public	List<GameObject>		npc_slots_list					= new List<GameObject>(); 
+
 [Space(10)][Header("References")]
 	public	GameObject				npc_shell_prefab				;
 	public	GameObject				scene_npc_container				;
 
-	public	GameObject				npc_spawn_point_debug			;	// DEBUG
 	public	GameObject				player_spawn_point_debug		;	// DEBUG
 
 // = = =
@@ -83,14 +85,25 @@ public class scr_interior : MonoBehaviour
 		Debug.Log("<b>= = = Interior's NPC genration = = =</b>");
 
 		Debug.Log("Generating <b>" + place_to_generate.place_npcs.Count + "</b> NPCS." );
+
+		// available slots buffer list
+		List<GameObject> available_slots = npc_slots_list;
+
 		// spawn npcs
 		foreach (var npc in place_to_generate.place_npcs)
 		{
+			// EMERGENCY STOP METHOD if this loop starts but there no more npc_slot available
+			if (npc_slots_list.Count <= 0) { Debug.LogError("ERROR! TRYING TO GENERATE INTERIOR NPC BUT THERE IS NO MORE SLOT AVAILABLE TO SPAWN IT!!"); return; }  
+
+			// draw 1 npc_slot and remove it from the buffer list
+			GameObject drawn_slot = npc_slots_list[ Random.Range(0, npc_slots_list.Count - 1) ];
+			npc_slots_list.Remove(drawn_slot);
+
 			// spawn npc method
 			GameObject instance;
 			scr_npc_shell instance_shell_script;
 
-			instance = Instantiate(npc_shell_prefab, new Vector3(npc_spawn_point_debug.transform.position.x + Random.Range(-1f, 1f), npc_spawn_point_debug.transform.position.y + Random.Range(-0.5f, 0.5f), npc_spawn_point_debug.transform.position.z), Quaternion.identity, scene_npc_container.transform);
+			instance = Instantiate(npc_shell_prefab, drawn_slot.transform.position, Quaternion.identity, scene_npc_container.transform);
 			instance_shell_script = instance.GetComponent<scr_npc_shell>();
 
 			instance_shell_script.linked_npc = npc;

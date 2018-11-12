@@ -37,6 +37,7 @@ public static GameManager instance;
 	public			Text				txt_player_gold				;
 
 [Space(10)][Header("References")]
+	public			GameObject			player_character_prefab		;
 	public			player_character	player_reference			;
 	public			GameObject			main_canvas_reference		;
 
@@ -55,6 +56,9 @@ public static GameManager instance;
 
 	void Start () 
 	{
+		// Spawn player_character
+		CreatePlayerCharacter(player_character_prefab, new Vector3(0,0,0) );
+
 		// Start QuestCheck Coroutine
 		StartCoroutine("QuestCheck_Coroutine");
 
@@ -294,7 +298,7 @@ public static GameManager instance;
 		player_reference.interaction_controller.ClearInrangeList();
 
 		// open scene
-		SceneManager.LoadScene("WorldMap");
+		SceneManager.LoadScene("00_WorldMap");
 
 		return;
 	}
@@ -343,5 +347,24 @@ public static GameManager instance;
 	}
 	// = =
 
+// = = =
+
+// = = = OTHER METHOS = = =
+	/// <summary>
+	/// Spawns a player character game object from a prefab.
+	/// <param name="prefab"> player character prefab to instantiate </param>
+	/// </summary>
+	public void CreatePlayerCharacter(GameObject prefab, Vector3 position)
+	{
+		// Instantiate player_character from prefab
+		GameObject instance;
+		instance = Instantiate(prefab, position, Quaternion.identity);
+
+		// Set player_character reference
+		player_reference = instance.GetComponent<player_character>();
+
+		Debug.Log("Player spawned");
+		return;
+	}
 
 }
