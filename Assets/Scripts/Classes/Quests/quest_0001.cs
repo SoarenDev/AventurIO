@@ -7,7 +7,7 @@ public class quest_0001 : cl_quest {
 
 /// = = = [ CONSTRUCTORS ] = = =
 
-    public quest_0001(scr_place origin_place)
+    public quest_0001(cl_npc selected_quest_owner, scr_place origin_place)
     {
         quest_id                    = 1;
 
@@ -25,6 +25,7 @@ public class quest_0001 : cl_quest {
         quest_reward_reputation     = 2;
 
         linked_place                = origin_place;
+        quest_owner                 = selected_quest_owner;
 
         //$param+1
         //$param+2

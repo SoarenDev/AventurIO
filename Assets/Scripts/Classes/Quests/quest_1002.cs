@@ -5,7 +5,7 @@ using UnityEngine;
 // [System.Serializable]
 public class quest_1002 : cl_quest_persistant {
 
-    public quest_1002(cl_event_persistant parent_event)
+    public quest_1002(cl_npc selected_quest_owner, cl_event_persistant parent_event)
     {
         quest_id                    = 1000;
         linked_event                = parent_event;        // should alaways be NULL for non-persistant events' quests
@@ -22,6 +22,8 @@ public class quest_1002 : cl_quest_persistant {
         quest_reward_gold           = 120;
         quest_reward_experience     = 50;
         quest_reward_reputation     = 18;
+
+        quest_owner                 = selected_quest_owner;
 
 
         //$param+1

@@ -61,9 +61,10 @@ public class event_0401 : cl_event {
         base.LaunchEvent(targeted_place, targeted_faction);
 
     // child method
-        
+        cl_npc quest_owner = SelectQuestOwner(targeted_place);
+
         // CREATE QUEST in linked_place
-        targeted_place.place_quests.Add(new quest_0001(event_origin_place));
+        quest_owner.npc_quests.Add(new quest_0001(quest_owner, event_origin_place));
 		Debug.Log("Quest added to " + targeted_place);
         
         return;

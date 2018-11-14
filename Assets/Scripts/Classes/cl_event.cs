@@ -43,6 +43,48 @@ public class cl_event {
 	}
 
 	/// <summary>
+	/// Selects an owner for the quest instance by testing condition and randomly selecting one matching select npc. Returns the selecetd npc.
+	/// Parent method draws one npcs randomly from every non-locked place's npcs.
+	/// </summary>
+	public virtual cl_npc SelectQuestOwner(scr_place targeted_place)
+	{
+		List<cl_npc> matching_npcs = new List<cl_npc>();
+		cl_npc selected_npc;
+
+		// list all npcs matching the condition
+		foreach (var npc in targeted_place.place_npcs)
+		{
+			if (npc.isLocked == false) { matching_npcs.Add(npc); }
+		}
+
+		// draw random npc from matching list
+		selected_npc = matching_npcs[Random.Range(0, matching_npcs.Count)];
+
+		return selected_npc;
+	}
+
+	/// <summary>
+	/// Selects an owner for the quest instance by testing condition and randomly selecting one matching select npc. Returns the selecetd npc.
+	/// Parent method draws one npcs randomly from every non-locked place's npcs who are members of "targeted_faction".
+	/// </summary>
+	public virtual cl_npc SelectQuestOwner(scr_place targeted_place, strct_local_faction targeted_faction)
+	{
+		List<cl_npc> matching_npcs = new List<cl_npc>();
+		cl_npc selected_npc;
+
+		// list all npcs matching the condition
+		foreach (var npc in targeted_place.place_npcs)
+		{
+			if (npc.isLocked == false && npc.npc_faction.local_faction == targeted_faction) { matching_npcs.Add(npc); }
+		}
+
+		// draw random npc from matching list
+		selected_npc = matching_npcs[Random.Range(0, matching_npcs.Count)];
+
+		return selected_npc;
+	}
+
+	/// <summary>
 	/// Define the event probability from given code proper to each event. Returns the final probability. The parent version of the method simply returns the "event_probability" variable of the class.
 	/// </summary>
 	public virtual int DefineProbability(scr_place targeted_place)

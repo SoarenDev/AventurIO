@@ -5,7 +5,7 @@ using UnityEngine;
 // [System.Serializable]
 public class quest_0004 : cl_quest {
 
-    public quest_0004(scr_place origin_place, cl_npc agressor)
+    public quest_0004(cl_npc selected_quest_owner, scr_place origin_place, cl_npc agressor)
     {
         quest_id                    = 4;
 
@@ -23,6 +23,7 @@ public class quest_0004 : cl_quest {
         quest_reward_reputation     = 3;
 
         linked_place                = origin_place;
+        quest_owner                 = selected_quest_owner;
 
         // Quest goals
         quest_agressor    = agressor;

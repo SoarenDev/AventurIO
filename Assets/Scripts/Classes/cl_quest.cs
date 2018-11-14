@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public 	enum 	enum_quest_state
+{
+    Available,
+	Ongoing,
+	Validable,
+	Complete
+} 
+
 [System.Serializable]
 public class cl_quest 
 {
@@ -18,6 +26,7 @@ public class cl_quest
 
 [Header("Data")]
 	public	bool					isAccepted							;
+	public	enum_quest_state		quest_state							= 0;
 	public	string					quest_target						;
 
 [Header("Rewards")]
@@ -32,6 +41,8 @@ public class cl_quest
 	public	strct_local_faction		linked_local_faction				;
 	[System.NonSerialized]
 	public	scr_place				linked_place						;		// mainly for basic quests
+	[System.NonSerialized]
+	public	cl_npc					quest_owner							;		// npc that own the quest reference and will be able to give it to the player or validate its completion
 
 // = = =
 

@@ -53,13 +53,13 @@ public class event_0404 : cl_event {
 
     public override bool ConditionCheck(scr_place targeted_place, strct_local_faction targeted_faction)
     {
-        // check if place have at least one npc who isn't member of the event's origin faction and have a npc member of this factoin
+        // check if place have at least one npc who isn't member of the event's origin faction and have a npc member of this faction
         List<cl_npc> npc_check_list = new List<cl_npc>();
 
         // = = FIRST CONDITION = =
         foreach (var npc in targeted_place.place_npcs)
         {
-            if (npc.isLocked == false && npc.npc_faction.local_faction != targeted_faction)
+            if (npc.isLocked == false && npc.npc_faction.local_faction != targeted_faction)     // <<< THIS IS A PLACE EVENT, TARGETED FACTION IS EMPTY !!!!!!!!!!!!!
             {
                 npc_check_list.Add(npc);
             }        
@@ -88,19 +88,40 @@ public class event_0404 : cl_event {
         // if method arrives here, conditions have been fulfilled
         return true;
     }
+
+    // CONDITION: NPC isn't locked && NPC is not in the same faction as the agressor
+    public override cl_npc SelectQuestOwner(scr_place targeted_place)
+    {
+        List<cl_npc> matching_npcs = new List<cl_npc>();
+		cl_npc selected_npc;
+
+		// list all npcs matching the condition
+		foreach (var npc in targeted_place.place_npcs)
+		{
+			if (npc.isLocked == false && npc.npc_faction.local_faction != agressor.npc_faction.local_faction) { matching_npcs.Add(npc); }
+		}
+
+		// draw random npc from matching list
+		selected_npc = matching_npcs[Random.Range(0, matching_npcs.Count)];
+
+		return selected_npc;
+    }
 	
     public override void LaunchEvent(scr_place targeted_place, strct_local_faction targeted_faction)
     {
         // assign agressor
         agressor = DrawAgressor(targeted_place, targeted_faction);
+        targeted_faction = agressor.npc_faction.local_faction;
     
     // base method
         base.LaunchEvent(targeted_place, targeted_faction);
 
     // child method
+
+        cl_npc quest_owner = SelectQuestOwner(targeted_place);
         
         // CREATE QUEST to linked_place
-        targeted_place.place_quests.Add(new quest_0004(event_origin_place, agressor));
+        quest_owner.npc_quests.Add(new quest_0004(quest_owner, event_origin_place, agressor));
 
 		Debug.Log("An agression had happened in " + targeted_place);
         return;

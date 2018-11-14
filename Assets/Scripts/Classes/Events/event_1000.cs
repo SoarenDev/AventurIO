@@ -53,8 +53,10 @@ public class event_1000 : cl_event_persistant {
 
     // child method
 
+        cl_npc quest_owner = SelectQuestOwner(targeted_place);
+
         // CREATE QUEST to linked_place
-        quest_1000 new_quest = new quest_1000(this);
+        quest_1000 new_quest = new quest_1000(quest_owner, this);
         targeted_place.place_quests.Add(new_quest);
 
         // add to event linked quests list

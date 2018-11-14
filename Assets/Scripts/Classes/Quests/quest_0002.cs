@@ -7,7 +7,7 @@ public class quest_0002 : cl_quest {
 
 /// = = = [ CONSTRUCTORS ] = = =
 
-    public quest_0002(scr_place origin_place, scr_place enemy_place)
+    public quest_0002(cl_npc selected_quest_owner, scr_place origin_place, scr_place enemy_place)
     {
         quest_id                    = 2;
 
@@ -25,6 +25,7 @@ public class quest_0002 : cl_quest {
         quest_reward_reputation     = 3;
 
         linked_place                = origin_place;
+        quest_owner                 = selected_quest_owner;
 
         // Quest goals
         quest_hostile_home_place    = enemy_place;

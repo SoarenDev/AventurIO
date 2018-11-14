@@ -107,6 +107,9 @@ public class scr_interior : MonoBehaviour
 			instance_shell_script = instance.GetComponent<scr_npc_shell>();
 
 			instance_shell_script.linked_npc = npc;
+
+			// [DEBUG] Signal that the npc has a quest to give
+			if (instance_shell_script.linked_npc.npc_quests.Count > 0) { instance.name = "WALLAH_LUI_IL_A_UNE_QUEST"; }
 		}
 
 		return;
