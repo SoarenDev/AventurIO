@@ -26,7 +26,7 @@ public class scr_InteractionController : MonoBehaviour
 		if (other.gameObject.tag == "npc" || other.gameObject.tag == "place" || other.gameObject.tag == "io")
 		{
 			IO_in_range.Remove(other.gameObject);
-			// other.gameObject.SendMessage("OutRange");
+			other.gameObject.SendMessage("OutRange");
 
 			// desactivate UI element if there no more IO in range when we remove one
 			if (IO_in_range.Count == 0) { GameManager.instance.ui_interact_image.SetActive(false); }

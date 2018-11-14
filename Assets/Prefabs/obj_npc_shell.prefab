@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212580620673170434}
   - component: {fileID: 61088150699974034}
   - component: {fileID: 114311474324022496}
+  - component: {fileID: 114134952395004884}
   m_Layer: 0
   m_Name: obj_npc_shell
   m_TagString: npc
@@ -58,7 +59,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.2, y: 0.2}
     newSize: {x: 0.17, y: 0.23}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -67,6 +68,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.17, y: 0.23}
   m_EdgeRadius: 0
+--- !u!114 &114134952395004884
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1662329335379150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de189e0c6187ddc4f83b77ce5b339647, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  is_tab_on: 0
 --- !u!114 &114311474324022496
 MonoBehaviour:
   m_ObjectHideFlags: 1
