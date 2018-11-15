@@ -13,6 +13,7 @@ public static GameManager instance;
 
 [Space(10)][Header("Data")]
 	public	static 	scr_place			ui_active_place				;
+	public	static	cl_npc				ui_active_npc				;
 	public	static 	scr_place			INT_active_place			;			// buffer variable used, when entering in a place, to keep the reference of this place
 
 //[Space(10)][Header("References")]
@@ -30,8 +31,8 @@ public static GameManager instance;
 	[Tooltip("These references will be used as static references in the IO_script_place")]
 	public			scr_UI_placeMenu	UI_placeMenu				;
 	public			scr_UI_placeTab		UI_placeTab					;
-	public			scr_UI_parent		UI_placeQuestsMenu			;
-	public			scr_UI_parent		UI_placeQuestTab			;
+	public			scr_UI_parent		UI_npcQuestsMenu			;
+	public			scr_UI_parent		UI_npcQuestsTab				;
 	[Space(5)][Header("Player HUD")]
 	public			GameObject			ui_player_hud_parent		;
 	public			Text				txt_player_gold				;
@@ -77,7 +78,6 @@ public static GameManager instance;
 		// = = DEBUG: CHEATS = =
 		// add gold
 		if (Input.GetKeyDown(KeyCode.Keypad1)) { player_reference.Gold += 100; }
-
 	}
 
 	IEnumerator QuestCheck_Coroutine()

@@ -80,6 +80,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   is_tab_on: 0
+  npc_shell_script: {fileID: 114311474324022496}
 --- !u!114 &114311474324022496
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -95,6 +96,7 @@ MonoBehaviour:
     npc_id: 0
     isDead: 0
     killed_by_player: 0
+    npc_quests: []
     npc_firstname: undefined
     npc_lastname: undefined
     npc_age: 30

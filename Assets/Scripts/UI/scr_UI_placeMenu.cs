@@ -14,7 +14,6 @@ public class scr_UI_placeMenu : scr_UI_parent {
 	public	Text				place_name				;
 	public	Button				bt_enter_place			;
 	public	Button				bt_place_tab			;
-	public	Button				bt_quests				;		// DEBUG
 
 [Space(10)][Header("Locals")]
 	private	bool				consumeInput_menuMove	= true;
@@ -29,7 +28,6 @@ public class scr_UI_placeMenu : scr_UI_parent {
 		// Binding click events
 		bt_enter_place.onClick.AddListener(BT_EnterPlace);
 		bt_place_tab.onClick.AddListener(BT_PlaceTab);
-		bt_quests.onClick.AddListener(BT_Quests);
 	}
 
 	void Update()
@@ -73,8 +71,8 @@ public class scr_UI_placeMenu : scr_UI_parent {
 
 	public void		Menu_MoveIndex(int value)		
 	{
-		if 		(menu_index + value < 0) { menu_index = 2; }	// move to last index
-		else if (menu_index + value > 2) { menu_index = 0; }	// move to first index
+		if 		(menu_index + value < 0) { menu_index = 1; }	// move to last index
+		else if (menu_index + value > 1) { menu_index = 0; }	// move to first index
 		else	{ menu_index += value; }						// normal movement
 		
 		Debug.Log("New index = " + menu_index);
@@ -87,8 +85,6 @@ public class scr_UI_placeMenu : scr_UI_parent {
 			case 0 : bt_enter_place.onClick.Invoke(); 	break;
 
 			case 1 : bt_place_tab.onClick.Invoke(); 	break;
-
-			case 2 : bt_quests.onClick.Invoke(); 		break;
 
 			default: Debug.LogError("MENU ACTION SWITCH INDEX OUT OF RANGE"); break;
 		}
@@ -116,6 +112,7 @@ public class scr_UI_placeMenu : scr_UI_parent {
 		GameManager.instance.UI_Construct(scr_ioScript_place.UI_place_tab);
 	}
 
+	/* DO NOT EXIST ANYMORE > QUEST MOVES INTO NPCS
 	/// <summary>
 	/// Method launched when the "Available quests" button is pressed.
 	/// </summary>
@@ -125,5 +122,6 @@ public class scr_UI_placeMenu : scr_UI_parent {
 		GameManager.instance.UI_Close(GameManager.UI_active_menu);
 		GameManager.instance.UI_Construct(scr_ioScript_place.UI_placeQuestsMenu);
 	}
+	*/
 
 }

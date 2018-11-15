@@ -10,8 +10,6 @@ public class scr_ioScript_place : scr_InteractibleObjectParentScript
 	public 			scr_place				linked_place_script		;
 	public 	static 	scr_UI_placeMenu		UI_place_menu			;
 	public 	static 	scr_UI_placeTab			UI_place_tab			;
-	public 	static 	scr_UI_parent			UI_placeQuestsMenu		;
-	public 	static 	scr_UI_parent			UI_placeQuestTab		;
 
 // = = =
 
@@ -24,8 +22,6 @@ public class scr_ioScript_place : scr_InteractibleObjectParentScript
 		// binding
 		UI_place_menu 		= GameManager.instance.UI_placeMenu;
 		UI_place_tab 		= GameManager.instance.UI_placeTab;
-		UI_placeQuestsMenu 	= GameManager.instance.UI_placeQuestsMenu;
-		UI_placeQuestTab 	= GameManager.instance.UI_placeQuestTab;
 
 		// Debug.Log("bind place menu: " + UI_place_menu);
 	}

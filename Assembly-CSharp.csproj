@@ -122,11 +122,11 @@
      <Compile Include="Assets\Scripts\scr_terrainCase.cs" />
      <Compile Include="Assets\Scripts\StructuresInitializer.cs" />
      <Compile Include="Assets\Scripts\test_script.cs" />
+     <Compile Include="Assets\Scripts\UI\scr_UI_npcQuestMenu.cs" />
+     <Compile Include="Assets\Scripts\UI\scr_UI_npcQuestTab.cs" />
      <Compile Include="Assets\Scripts\UI\scr_UI_parent.cs" />
      <Compile Include="Assets\Scripts\UI\scr_UI_placeFactionButton.cs" />
      <Compile Include="Assets\Scripts\UI\scr_UI_placeMenu.cs" />
-     <Compile Include="Assets\Scripts\UI\scr_UI_placeQuestMenu.cs" />
-     <Compile Include="Assets\Scripts\UI\scr_UI_placeQuestTab.cs" />
      <Compile Include="Assets\Scripts\UI\scr_UI_placeTab.cs" />
      <Compile Include="Assets\Scripts\UI\scr_UI_questButton.cs" />
  <Reference Include="UnityEditor.StandardEvents">

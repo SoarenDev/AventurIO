@@ -51,7 +51,7 @@ public class cl_quest
  	/// </summary>
 	public virtual void		OnAcceptQuest()
 	{
-		isAccepted = true;
+		quest_state = enum_quest_state.Ongoing;
 		GameManager.instance.player_reference.accepted_quests.Add(this);
 
 		Debug.Log("<b>Quest " + quest_name + " accepted ! </b>");
@@ -86,7 +86,7 @@ public class cl_quest
 	public virtual 	void 	DeleteQuest()
 	{
 		if (GameManager.instance.player_reference.accepted_quests.Remove(this) == true) { GameManager.instance.player_reference.accepted_quests.Remove(this); }
-		if (linked_place.place_quests.Remove(this) == true) { linked_place.place_quests.Remove(this); }
+		quest_owner.npc_quests.Remove(this);
 
 		Debug.Log("Quest deleted");
 		return;
