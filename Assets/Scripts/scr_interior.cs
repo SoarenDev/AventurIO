@@ -108,8 +108,9 @@ public class scr_interior : MonoBehaviour
 
 			instance_shell_script.linked_npc = npc;
 
-			// [DEBUG] Signal that the npc has a quest to give
-			if (instance_shell_script.linked_npc.npc_quests.Count > 0) { instance.name = "WALLAH_LUI_IL_A_UNE_QUEST"; }
+			// Update overhead sprite
+			instance_shell_script.UpdateQuestOverheadSprite();
+
 		}
 
 		return;
@@ -118,8 +119,6 @@ public class scr_interior : MonoBehaviour
 // = =
 
 // = = OTHER METHODS = =
-
-
 
 	/// <summary>
 	/// Clean the interior and empty it, setting it back to its default content, before generation.

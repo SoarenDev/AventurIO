@@ -36,7 +36,7 @@ public class scr_io_npc_shell : scr_InteractibleObjectParentScript
 		if (is_tab_on == false)
 		{	
 			// construct the PLACE MENU if is's not already constructed
-			GameManager.ui_active_npc = npc_shell_script.linked_npc;
+			GameManager.ui_active_npc = npc_shell_script;
 			GameManager.instance.UI_Construct(GameManager.instance.UI_npcQuestsMenu);
 			is_tab_on = true;		// set this script instance as the one used in open PLACE MENU
 		}

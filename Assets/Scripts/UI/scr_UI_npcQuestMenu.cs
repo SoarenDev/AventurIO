@@ -74,7 +74,7 @@ public class scr_UI_npcQuestMenu : scr_UI_parent {
 		}
 
 		// Construct new UI Buttons
-		foreach (var quest in GameManager.ui_active_npc.npc_quests)
+		foreach (var quest in GameManager.ui_active_npc.linked_npc.npc_quests)
 		{
 			// draw button
 			Button instance = Instantiate(quest_button_prefab, new Vector3(0,0,0), Quaternion.identity, this.transform);

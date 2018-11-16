@@ -1160,7 +1160,7 @@ MonoBehaviour:
   - {fileID: 222070144}
   - {fileID: 683708799}
   - {fileID: 1859959180}
-  npc_shell_prefab: {fileID: 1662329335379150, guid: 4b28e512d99708049b85c891ea5c1c13,
+  npc_shell_prefab: {fileID: 1988304616487642, guid: 4b28e512d99708049b85c891ea5c1c13,
     type: 2}
   scene_npc_container: {fileID: 1548569385}
   player_spawn_point_debug: {fileID: 1217894683}

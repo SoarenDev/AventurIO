@@ -28,6 +28,8 @@ public class scr_UI_placeMenu : scr_UI_parent {
 		// Binding click events
 		bt_enter_place.onClick.AddListener(BT_EnterPlace);
 		bt_place_tab.onClick.AddListener(BT_PlaceTab);
+
+		return;
 	}
 
 	void Update()

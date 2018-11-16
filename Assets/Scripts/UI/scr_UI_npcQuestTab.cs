@@ -74,6 +74,9 @@ public class scr_UI_npcQuestTab : scr_UI_parent {
 
 		ui_active_quest.OnAcceptQuest();
 
+		// update npc_shell overhead sprite
+		GameManager.ui_active_npc.UpdateQuestOverheadSprite();
+
 		// update menu
 		RefreshTab();
 
@@ -89,6 +92,9 @@ public class scr_UI_npcQuestTab : scr_UI_parent {
 
 		ui_active_quest.DeleteQuest();
 
+		// update npc_shell overhead sprite
+		GameManager.ui_active_npc.UpdateQuestOverheadSprite();
+
 		// close tab
 		GameManager.instance.UI_Close(GameManager.UI_active_menu);
 
@@ -103,6 +109,9 @@ public class scr_UI_npcQuestTab : scr_UI_parent {
 		Debug.Log("ACCEPT QUEST BT");
 
 		ui_active_quest.CompleteQuest(0);
+
+		// update npc_shell overhead sprite
+		GameManager.ui_active_npc.UpdateQuestOverheadSprite();
 
 		// close tab
 		GameManager.instance.UI_Close(GameManager.UI_active_menu);

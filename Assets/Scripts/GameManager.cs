@@ -13,7 +13,7 @@ public static GameManager instance;
 
 [Space(10)][Header("Data")]
 	public	static 	scr_place			ui_active_place				;
-	public	static	cl_npc				ui_active_npc				;
+	public	static	scr_npc_shell		ui_active_npc				;
 	public	static 	scr_place			INT_active_place			;			// buffer variable used, when entering in a place, to keep the reference of this place
 
 //[Space(10)][Header("References")]

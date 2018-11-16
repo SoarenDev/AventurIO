@@ -51,4 +51,19 @@ public 	enum 	npcRaceEnum
         return;
     }
 
+    /// <summary>
+	/// Searches if the npc has at least one quest with a given state.
+    /// Returns a bool.
+	/// </summary>
+	public bool SearchQuestState(enum_quest_state state_to_search)
+	{
+        foreach (var quest in npc_quests)
+        {
+            if(quest.quest_state == state_to_search) { return true; }
+        }
+
+        // return false if there is no quest with the given state
+        return false;
+	}
+
 }
