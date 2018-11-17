@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// Script that contains and centralize a lot of informations and data about player character, such as life, stamina, attributes...
-public class player_character : MonoBehaviour {
+public class player_character : MonoBehaviour 
+{
 
 // = = = [ VARIABLES DEFINITION ] = = =
 

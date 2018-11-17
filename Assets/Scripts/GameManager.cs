@@ -4,7 +4,19 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour {
+public enum enum_character_characteristics
+{
+	Strength,
+	Endurance,
+	Perception,
+	Willpower,
+	Charisma,
+	Luck
+}
+
+
+public class GameManager : MonoBehaviour 
+{
 
 public static GameManager instance;
 
