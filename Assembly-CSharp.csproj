@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CharacterFollow.cs" />
+     <Compile Include="Assets\Scripts\Classes\cl_character_data.cs" />
      <Compile Include="Assets\Scripts\Classes\cl_event.cs" />
      <Compile Include="Assets\Scripts\Classes\cl_event_persistant.cs" />
      <Compile Include="Assets\Scripts\Classes\cl_faction.cs" />

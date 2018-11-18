@@ -97,7 +97,7 @@ public class cl_quest
 	/// </summary>
 	public virtual 	void 	RewardQuest()
 	{
-		GameManager.instance.player_reference.Experience += quest_reward_experience;
+		GameManager.instance.player_reference.player_character_data.Experience += quest_reward_experience;
 		GameManager.instance.player_reference.Gold += quest_reward_gold;
 
 		Debug.Log("Quest rewards given to player");

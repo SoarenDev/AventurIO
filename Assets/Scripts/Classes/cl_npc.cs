@@ -19,6 +19,7 @@ public 	enum 	npcRaceEnum
     public  bool                                isDead              ;
     public  bool                                killed_by_player    ;                           // set to true if the charcter is considered as killed by the player (used for quest completion check)
     public  List<cl_quest>                      npc_quests          = new List<cl_quest>();
+    public  cl_character_data                   npc_character_data  = new cl_character_data();
 
 [Space(10)][Header("Attributes")]
     public  string                              npc_firstname       = "undefined";
