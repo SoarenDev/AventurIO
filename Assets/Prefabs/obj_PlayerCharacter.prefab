@@ -137,15 +137,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accepted_quests: []
-  health: 0
-  stamina: 0
-  experience: 0
   gold: 0
-  exp_level: 1
-  shoot_cooldown: 0
   gold_ui_trans_value: 0
   player_controller: {fileID: 114829997172982436}
   interaction_controller: {fileID: 114306475010004122}
+  player_character_data:
+    health: 30
+    stamina: 30
+    experience: 0
+    exp_level: 1
+    strength: 0
+    endurance: 0
+    perception: 0
+    willpower: 0
+    charisma: 0
+    luck: 0
+    shoot_cooldown: 0
 --- !u!114 &114306475010004122
 MonoBehaviour:
   m_ObjectHideFlags: 1

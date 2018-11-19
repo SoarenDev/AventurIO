@@ -12,14 +12,15 @@ public enum enum_character_characteristics
 	Luck
 }
 
+[System.Serializable]
 public class cl_character_data 
 {
 
 // = = = [ VARIABLES DEFINITION ] = = =
 
 [Space(10)][Header("Attributes")]
-	public			int							health								;
-	public			int							stamina								;
+	public			int							health								= 30;
+	public			int							stamina								= 30;
 	public			int							experience							;
 	public			int							exp_level							= 1;
     [Space(5)]
