@@ -2,12 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public enum enum_controller_mode
+{
+	worldmap,
+	interior,
+	menu
+}
 
-	public 	float		speed;
-	private	float		localScaleX;
-	public	Animator	characterAnimator;
-	public 	Animation	walkAnimation;
+public class PlayerController : MonoBehaviour 
+{
+
+// = = = [ VARIABLES DEFINITION ] = = =
+
+[Space(10)][Header("Data")]
+	public	enum_controller_mode		controller_mode						;
+	public 	float						speed								;
+	private	float						localScaleX							;
+
+[Space(10)][Header("References")]
+	public	player_character			player_script						;
+	public	Animator					characterAnimator					;
+	public 	Animation					walkAnimation						;
+
+// = = =
+
+// = = = [ MONOBEHAVIOR MEHODS ] = = =
 
 	void Start () 
 	{
@@ -16,7 +35,31 @@ public class PlayerController : MonoBehaviour {
 	
 	void Update () 
 	{
-		// Movement
+		// = = = BATTLE = = =
+
+		if (Input.GetKeyDown(KeyCode.T))
+		{
+			player_script.player_battle_script.LaunchSkill(player_script.player_character_data.weapon.skill_base_index);
+		} 
+		else if (Input.GetKeyDown(KeyCode.Y))
+		{
+			player_script.player_battle_script.LaunchSkill(player_script.player_character_data.weapon.skill_secondary_index);
+		}
+		else if (Input.GetKeyDown(KeyCode.U))
+		{
+			player_script.player_battle_script.LaunchSkill(player_script.player_character_data.weapon.skill_special_1_index);
+		}
+		else if (Input.GetKeyDown(KeyCode.I))
+		{
+			player_script.player_battle_script.LaunchSkill(player_script.player_character_data.weapon.skill_special_2_index);
+		}
+		else if (Input.GetKeyDown(KeyCode.O))
+		{
+			player_script.player_battle_script.LaunchSkill(player_script.player_character_data.weapon.skill_ultimate_index);
+		}
+
+		// = = = MOVEMENT = = =
+
 		if (Input.GetKey(KeyCode.RightArrow))
 		{
 			transform.Translate(new Vector3 (1 * speed, 0, 0));
@@ -48,8 +91,18 @@ public class PlayerController : MonoBehaviour {
 			characterAnimator.SetBool("isWalkingDown?", false);
 		}
 
+		// = = =
+
 		// Animation
 
 	}
+
+// = = =
+
+
+
+// = = = [ CLASS METHODS ] = = =
+
+// = = =
 
 }

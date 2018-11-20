@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 114031122542353700}
   - component: {fileID: 114829997172982436}
   - component: {fileID: 114306475010004122}
+  - component: {fileID: 114419607389190658}
   m_Layer: 0
   m_Name: obj_PlayerCharacter
   m_TagString: Player
@@ -137,10 +138,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accepted_quests: []
-  gold: 0
-  gold_ui_trans_value: 0
-  player_controller: {fileID: 114829997172982436}
-  interaction_controller: {fileID: 114306475010004122}
   player_character_data:
     health: 30
     stamina: 30
@@ -152,7 +149,13 @@ MonoBehaviour:
     willpower: 0
     charisma: 0
     luck: 0
+    weapon: {fileID: 11400000, guid: 5721a402443950241a8cac1dba7c5207, type: 2}
     shoot_cooldown: 0
+  gold: 0
+  gold_ui_trans_value: 0
+  player_controller: {fileID: 114829997172982436}
+  interaction_controller: {fileID: 114306475010004122}
+  player_battle_script: {fileID: 114419607389190658}
 --- !u!114 &114306475010004122
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -166,6 +169,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IO_in_range: []
   targeted_IO_index: -1
+--- !u!114 &114419607389190658
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1941461364675022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a81a24a7d58092d4999092002b9c48fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actual_combo: 0
+  linked_character_data:
+    health: 30
+    stamina: 30
+    experience: 0
+    exp_level: 1
+    strength: 0
+    endurance: 0
+    perception: 0
+    willpower: 0
+    charisma: 0
+    luck: 0
+    weapon: {fileID: 11400000, guid: 5721a402443950241a8cac1dba7c5207, type: 2}
+    shoot_cooldown: 0
 --- !u!114 &114829997172982436
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -177,7 +205,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bcaf94d4da2452499bf9aab5d26ddfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controller_mode: 0
   speed: 0.03
+  player_script: {fileID: 114031122542353700}
   characterAnimator: {fileID: 95389183056354564}
   walkAnimation: {fileID: 0}
 --- !u!212 &212570596889786374

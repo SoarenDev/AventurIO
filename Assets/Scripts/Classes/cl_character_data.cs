@@ -31,6 +31,9 @@ public class cl_character_data
     public          int                         charisma                            ;
     public          int                         luck                                ;
 
+[Space(10)][Header("Equipement")]
+	public			so_weapon					weapon								;
+
 [Space(10)][Header("Usuals")]
 	public			float						shoot_cooldown						;
 

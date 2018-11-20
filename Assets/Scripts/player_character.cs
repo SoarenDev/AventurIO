@@ -10,6 +10,7 @@ public class player_character : MonoBehaviour
 
 [Space(10)][Header("Data")]
 	public	 		List<cl_quest>				accepted_quests						= new List<cl_quest>();
+	public			cl_character_data			player_character_data				;
 	
 [Space(10)][Header("Attributes")]
 	public			int							gold								;
@@ -20,30 +21,31 @@ public class player_character : MonoBehaviour
 [Space(10)][Header("References")]
 	public			PlayerController			player_controller					;
 	public			scr_InteractionController	interaction_controller				;
-	public			cl_character_data			player_character_data				;
+	public			scr_battle_script			player_battle_script				;	
 
 // = = =
 
 // = = = [ VARIABLES PROPERTIES ] = = =
 
 	public	int		Gold
-		{
-			get { return gold; }
-			set { 
-				gold = value; 
-				GameManager.instance.StopCoroutine("GoldUiTransition");
-				GameManager.instance.StartCoroutine("GoldUiTransition", 0.45f);
-			}
+	{
+		get { return gold; }
+		set { 
+			gold = value; 
+			GameManager.instance.StopCoroutine("GoldUiTransition");
+			GameManager.instance.StartCoroutine("GoldUiTransition", 0.45f);
 		}
+	}
 		
 // = = =
 
 // = = = [ MONOBEHAVIOR METHODS ] = = =
 
-	/* void Start () 
+	void Start () 
 	{
-		
-	}*/
+		// bind player's character data to player's battle script
+		player_battle_script.linked_character_data = player_character_data;
+	}
 	
 	void Update () 
 	{
