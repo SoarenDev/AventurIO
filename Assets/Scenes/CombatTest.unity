@@ -140,7 +140,7 @@ Transform:
   m_Children:
   - {fileID: 1701780637}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1106004877
 GameObject:
@@ -10365,7 +10365,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1285878743
 GameObject:
@@ -10393,7 +10393,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1568922250
 Prefab:
@@ -10432,7 +10432,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4472516582752220, guid: 4b28e512d99708049b85c891ea5c1c13, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b28e512d99708049b85c891ea5c1c13, type: 2}
@@ -12403,6 +12403,97 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!1 &1788836966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1788836968}
+  - component: {fileID: 1788836967}
+  m_Layer: 0
+  m_Name: DataManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1788836967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1788836966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a42dfddbb1f32c140b96b6d3115e0e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  region_list:
+  - {fileID: 0}
+  place_modificatorList:
+  - {fileID: 11400000, guid: 714aad589210bff499d071bcb0219aa4, type: 2}
+  place_generationPreset:
+  - {fileID: 0}
+  place_nameList:
+  - {fileID: 11400000, guid: 499385b85162adc41ab8f1bf2f71e7a0, type: 2}
+  - {fileID: 11400000, guid: 6598e310d45cefa498c989cd3e2b86f4, type: 2}
+  - {fileID: 11400000, guid: 55f7e21a2e56f7d4586358808b542f1b, type: 2}
+  - {fileID: 11400000, guid: 14eb184f57e72b8498bd2fffc4c67280, type: 2}
+  - {fileID: 11400000, guid: 884edeaebb6fb9c419faecb0bf2896b6, type: 2}
+  - {fileID: 11400000, guid: f0fc04c814cf81946a31a2a8ea0f420b, type: 2}
+  place_typeList:
+  - {fileID: 11400000, guid: e1c967319ddcfa34ca679211f83ef188, type: 2}
+  - {fileID: 11400000, guid: b31c4f6bbb80c78499e8c5bef8a48561, type: 2}
+  - {fileID: 11400000, guid: 1ee9b3e6db092194183cc1fbf31791c2, type: 2}
+  - {fileID: 11400000, guid: 7796017cc3786184da6c158eb75f953c, type: 2}
+  - {fileID: 11400000, guid: 39ab1c1cf62a6004790766e7ae06952e, type: 2}
+  - {fileID: 11400000, guid: 77c438ac4d1754743901b45558d52df2, type: 2}
+  - {fileID: 11400000, guid: 67ae131e91c63094dbd11c6ec5fafabc, type: 2}
+  - {fileID: 11400000, guid: a8526dc356a41ef4fbb47a835fd3b0f5, type: 2}
+  - {fileID: 11400000, guid: e42b7ae824b06a640be0ea85214d3aff, type: 2}
+  - {fileID: 11400000, guid: 3d216f22210aeb14982bd38dd0985eb4, type: 2}
+  - {fileID: 11400000, guid: 317ad150232d7074486f7079e01080cc, type: 2}
+  - {fileID: 11400000, guid: 01d26b7dca9efc74899dc1c8251cfc2a, type: 2}
+  - {fileID: 11400000, guid: 944a2cfdcbdd1f64d935ff0af48a5853, type: 2}
+  faction_list: []
+  faction_typeList:
+  - {fileID: 11400000, guid: 2f9314a9fea0ebd43a076597d302f404, type: 2}
+  - {fileID: 11400000, guid: 27785a47270390a4b872df6773debe85, type: 2}
+  - {fileID: 11400000, guid: 8ca3faa51a3b5bf4784b692231c6e7ff, type: 2}
+  - {fileID: 11400000, guid: 1ca320c70a97af34a932cd62ca680ebf, type: 2}
+  - {fileID: 11400000, guid: c34da6531502b4d498d3999ab505a69b, type: 2}
+  - {fileID: 11400000, guid: 6c4f26012fefd724c99c4459ae5dd642, type: 2}
+  - {fileID: 11400000, guid: 2b06ff7289c553f40ad671c3b112fc60, type: 2}
+  - {fileID: 11400000, guid: fa5756017d34aca4785d96449259c1b8, type: 2}
+  - {fileID: 11400000, guid: 05c4574372652ea46b58144f1ccc9da7, type: 2}
+  - {fileID: 11400000, guid: 111c54ac8d66331499be579275a74192, type: 2}
+  - {fileID: 11400000, guid: acd3cccecb3db1c4095208ec060c8aa0, type: 2}
+  - {fileID: 11400000, guid: bfcfbb3fdd53dd74286a8df085022744, type: 2}
+  - {fileID: 11400000, guid: 8aa6b57c0adaedd47b928912d0a17c7d, type: 2}
+  npc_list: []
+  npc_situationList: []
+  npc_male_nameList:
+  - {fileID: 11400000, guid: 89df441b3fcc9e0489b3d5e14f06899e, type: 2}
+  npc_female_nameList:
+  - {fileID: 11400000, guid: 724cecaece7a9c94fbb559f057847e61, type: 2}
+  npc_family_nameList:
+  - {fileID: 11400000, guid: f07f30b913c5c3145a84514523e5033f, type: 2}
+  exp_levelup_table: 00000000000000000a000000190000003200000064000000e7030000e7030000e7030000e70300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+--- !u!4 &1788836968
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1788836966}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2008899637
 Prefab:
   m_ObjectHideFlags: 0
@@ -12440,7 +12531,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4041351072615924, guid: 54ff23fa5dbe93a4c9c7675fc75dfefe, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114419607389190658, guid: 54ff23fa5dbe93a4c9c7675fc75dfefe,
+        type: 2}
+      propertyPath: linked_character_data.stamina
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54ff23fa5dbe93a4c9c7675fc75dfefe, type: 2}

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   price: 55
-  skill_base_index: 1
-  skill_secondary_index: 2
-  skill_special_1_index: 3
-  skill_special_2_index: 4
-  skill_ultimate_index: 5
+  skill_base_index: 00000000
+  skill_secondary_index: 01000000
+  skill_special_1_index: 010000000200000003000000
+  skill_special_2_index: 02000000020000000200000003000000
+  skill_ultimate_index: 04000000

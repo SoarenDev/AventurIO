@@ -102,6 +102,11 @@
      <Compile Include="Assets\Scripts\Classes\ScriptableObjects\so_place_type.cs" />
      <Compile Include="Assets\Scripts\Classes\ScriptableObjects\so_place_type_genPreset.cs" />
      <Compile Include="Assets\Scripts\Classes\ScriptableObjects\so_weapon.cs" />
+     <Compile Include="Assets\Scripts\Classes\Skills\skill_0000.cs" />
+     <Compile Include="Assets\Scripts\Classes\Skills\skill_0001.cs" />
+     <Compile Include="Assets\Scripts\Classes\Skills\skill_0002.cs" />
+     <Compile Include="Assets\Scripts\Classes\Skills\skill_0003.cs" />
+     <Compile Include="Assets\Scripts\Classes\Skills\skill_0004.cs" />
      <Compile Include="Assets\Scripts\Classes\Structures\strct_indexXint.cs" />
      <Compile Include="Assets\Scripts\Classes\Structures\strct_local_faction.cs" />
      <Compile Include="Assets\Scripts\Classes\Structures\strct_npcClassXint.cs" />

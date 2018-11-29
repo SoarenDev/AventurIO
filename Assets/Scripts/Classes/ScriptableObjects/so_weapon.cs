@@ -21,11 +21,11 @@ public class so_weapon : ScriptableObject
     public  int                     price                               ;
 
 [Space(10)][Header("Skills")]
-    public  int                     skill_base_index                    ;
-    public  int                     skill_secondary_index               ;
-    public  int                     skill_special_1_index               ;
-    public  int                     skill_special_2_index               ;
-    public  int                     skill_ultimate_index                ;
+    public  int[]                   skill_base_index                    ;
+    public  int[]                   skill_secondary_index               ;
+    public  int[]                   skill_special_1_index               ;
+    public  int[]                   skill_special_2_index               ;
+    public  int[]                   skill_ultimate_index                ;
 
 // = = =
 

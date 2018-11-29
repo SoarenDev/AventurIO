@@ -2,20 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DataManager : MonoBehaviour {
+public class DataManager : MonoBehaviour 
+{
 
 public static DataManager instance;
 
-//[Space(10)][Header("REFERENCES")]
-
-// [Space(10)][Header("GLOBAL")]
+// = = = [ VARIABLES DEFINITION ] = = =
 
 [Space(10)][Header("REGIONS")]
 	public	List<GameObject>						region_list					;
 
 [Space(10)][Header("PLACES")]
 	public	so_modificator_place[]					place_modificatorList		;				// only here to generate the Dictionary on start
-	public	Dictionary<int, so_modificator_place> 	place_modificatorDict 		= new 	Dictionary<int, so_modificator_place>();
+	public	Dictionary<int, so_modificator_place> 	place_modificatorDict 		= new Dictionary<int, so_modificator_place>();
 	public	so_place_type_genPreset[]				place_generationPreset		;
 	public	so_namelist[]							place_nameList				;
 	[Space(5)]
@@ -26,7 +25,7 @@ public static DataManager instance;
 	public	List<cl_faction>						faction_list				;
 	[Space(5)]
 	public	List<so_faction_type>					faction_typeList			;
-	public	Dictionary<int,so_faction_type>			faction_typeDict			= new Dictionary<int,so_faction_type>();
+	public	Dictionary<int, so_faction_type>		faction_typeDict			= new Dictionary<int,so_faction_type>();
 
 [Space(10)][Header("NPCS")]
 	public 	List<cl_npc> 							npc_list 					; /*= new List<cl_npc>()*/
@@ -38,6 +37,21 @@ public static DataManager instance;
 
 [Space(10)][Header("RPG Data")]
 	public	int[]									exp_levelup_table			= new int[100];		// contain the needed exp for a character to reach next exp_level for each level. The array's index correspond the concerned experience level
+
+[Space(10)][Header("SKILLS")]
+	public	List<cl_skill>							data_skill_list				= new List<cl_skill>
+	{
+		new skill_0000(),
+		new skill_0001(),
+		new skill_0002(),
+		new skill_0003(),
+		new skill_0004()
+	};
+	public	Dictionary<int, cl_skill>				data_skill_Dict				= new Dictionary<int, cl_skill>();
+
+// = = =
+
+// = = = [ MONOBEHAVIOR METHODS ] = = =
 
 	void Awake () {
 
@@ -70,15 +84,23 @@ public static DataManager instance;
 		{ if (item != null) { faction_typeDict.Add(item.id, item); } }
 		Debug.Log("faction types dictionary created with " + faction_typeDict.Count + " references!");
 
+		// cl_skill
+		foreach (var skill in data_skill_list)
+		{ if (skill != null) { data_skill_Dict.Add(skill.id, skill); } }
+		Debug.Log("skills dictionary created with " + data_skill_Dict.Count + " references!");
+
 	// = =
 
 	}
-	
-	void Update () {
-		
-	}
 
-	public void Check(){
+// = = =
+
+// = = = [ CLASS METHODS ] = = =
+
+	public void Check()
+	{
 		Debug.Log("DataManager checked");
 	}
+
+// = = =
 }

@@ -39,23 +39,23 @@ public class PlayerController : MonoBehaviour
 
 		if (Input.GetKeyDown(KeyCode.T))
 		{
-			player_script.player_battle_script.LaunchSkill(player_script.player_character_data.weapon.skill_base_index);
+			player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_base_index);
 		} 
 		else if (Input.GetKeyDown(KeyCode.Y))
 		{
-			player_script.player_battle_script.LaunchSkill(player_script.player_character_data.weapon.skill_secondary_index);
+			player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_secondary_index);
 		}
 		else if (Input.GetKeyDown(KeyCode.U))
 		{
-			player_script.player_battle_script.LaunchSkill(player_script.player_character_data.weapon.skill_special_1_index);
+			player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_special_1_index);
 		}
 		else if (Input.GetKeyDown(KeyCode.I))
 		{
-			player_script.player_battle_script.LaunchSkill(player_script.player_character_data.weapon.skill_special_2_index);
+			player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_special_2_index);
 		}
 		else if (Input.GetKeyDown(KeyCode.O))
 		{
-			player_script.player_battle_script.LaunchSkill(player_script.player_character_data.weapon.skill_ultimate_index);
+			player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_ultimate_index);
 		}
 
 		// = = = MOVEMENT = = =
