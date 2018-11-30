@@ -48,6 +48,7 @@ public static DataManager instance;
 		new skill_0004()
 	};
 	public	Dictionary<int, cl_skill>				data_skill_Dict				= new Dictionary<int, cl_skill>();
+	public	List<GameObject>						damageCollider_prefab_list	;
 
 // = = =
 

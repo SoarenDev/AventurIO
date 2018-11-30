@@ -9,6 +9,7 @@ TagManager:
   - case
   - io
   - npc
+  - damageCollider
   layers:
   - Default
   - TransparentFX

@@ -37,6 +37,7 @@ GameObject:
   - component: {fileID: 4472516582752220}
   - component: {fileID: 212044366696412808}
   - component: {fileID: 61154124431411068}
+  - component: {fileID: 50371063705594048}
   - component: {fileID: 114167027504578050}
   - component: {fileID: 114316025284716588}
   - component: {fileID: 114899564784826692}
@@ -74,6 +75,26 @@ Transform:
   m_Father: {fileID: 4472516582752220}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50371063705594048
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1988304616487642}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!61 &61154124431411068
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -116,8 +137,8 @@ MonoBehaviour:
     killed_by_player: 0
     npc_quests: []
     npc_character_data:
-      health: 30
-      stamina: 30
+      max_health: 30
+      max_stamina: 30
       experience: 0
       exp_level: 1
       strength: 0
@@ -126,7 +147,9 @@ MonoBehaviour:
       willpower: 0
       charisma: 0
       luck: 0
-      shoot_cooldown: 0
+      health_regen: 0
+      stamina_regen: 5
+      weapon: {fileID: 0}
     npc_firstname: undefined
     npc_lastname: undefined
     npc_age: 30
@@ -164,9 +187,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actual_combo: 0
+  last_skill_array: 
+  health: 30
+  stamina: 30
+  shoot_cooldown: 0
+  is_exhausted: 0
+  is_attacking: 0
   linked_character_data:
-    health: 30
-    stamina: 30
+    max_health: 30
+    max_stamina: 30
     experience: 0
     exp_level: 1
     strength: 0
@@ -175,7 +204,9 @@ MonoBehaviour:
     willpower: 0
     charisma: 0
     luck: 0
-    shoot_cooldown: 0
+    health_regen: 0
+    stamina_regen: 5
+    weapon: {fileID: 0}
 --- !u!212 &212044366696412808
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -16,7 +16,7 @@ public class skill_0001 : cl_skill
         damage_amount                   = 10;
         element                         = enum_skill_element.none;
 
-        damage_collider                 = null;
+        damage_collider_index           = 0;
         can_be_interrupted              = false;
         can_interrupt                   = false;
     }
@@ -30,9 +30,9 @@ public class skill_0001 : cl_skill
 
 // = = = [ CLASS METHODS ] = = =
 
-    public override void LaunchSkill()
+    public override void LaunchSkill(GameObject instigator)
     {
-        base.LaunchSkill();
+        base.LaunchSkill(instigator);
 
         Debug.Log("SKILL: <b>" + name + "</b> launched!");
 

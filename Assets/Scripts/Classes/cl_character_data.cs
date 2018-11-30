@@ -19,8 +19,8 @@ public class cl_character_data
 // = = = [ VARIABLES DEFINITION ] = = =
 
 [Space(10)][Header("Attributes")]
-	public			int							health								= 30;
-	public			int							stamina								= 30;
+	public			int							max_health							= 30;
+	public			int							max_stamina							= 30;
 	public			int							experience							;
 	public			int							exp_level							= 1;
     [Space(5)]
@@ -30,12 +30,12 @@ public class cl_character_data
     public          int                         willpower                           ;
     public          int                         charisma                            ;
     public          int                         luck                                ;
+	[Space(5)]
+	public			float						health_regen						;
+	public			float						stamina_regen						= 5;			// per second								
 
 [Space(10)][Header("Equipement")]
 	public			so_weapon					weapon								;
-
-[Space(10)][Header("Usuals")]
-	public			float						shoot_cooldown						;
 
 // = = =
 
@@ -43,10 +43,10 @@ public class cl_character_data
 // = = = [ VARIABLES PROPERTIES ] = = =
 
 	public	int		Experience
-		{
-			get { return experience; }
-			set { experience = value; CheckLevelUp();}
-		}
+	{
+		get { return experience; }
+		set { experience = value; CheckLevelUp();}
+	}
 
 // = = =
 
@@ -57,7 +57,7 @@ public class cl_character_data
 	/// Checks if the experience value is high enough to get the character to the next experience level, and if the character havn't reach the maximum level already.
 	/// Method launched on all "experience" variable set.
 	/// </summary>
-	public	void	CheckLevelUp()
+	public	void		CheckLevelUp()
 	{
 		if (Experience >= DataManager.instance.exp_levelup_table[exp_level+1] && exp_level+1 < DataManager.instance.exp_levelup_table.Length)
 		{
@@ -70,7 +70,7 @@ public class cl_character_data
 	/// <summary>
 	/// Makes the character gain an experience level. Update all necessary variable and data.
 	/// </summary>
-	public	void	LevelUp()
+	public	void		LevelUp()
 	{
 		// increments level attribute
 		exp_level += 1;

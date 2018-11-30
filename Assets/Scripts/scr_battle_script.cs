@@ -10,9 +10,42 @@ public class scr_battle_script : MonoBehaviour
 [Space(10)][Header("Data")]
 	public 		int 						actual_combo					;
 	public		int[]						last_skill_array				;			// PAS OPTI, PEUT ETRE MIEUX GÉRÉ
+	[Space(5)]
+	public		float						health							= 30;
+	public		float						stamina							= 30;
+
+[Space(10)][Header("Usuals")]
+	public		float						shoot_cooldown					;
+	public		bool						is_exhausted					;
+	public		bool						is_attacking					;
 
 [Space(10)][Header("References")]
 	public 		cl_character_data 			linked_character_data			;
+	private		Coroutine					exhaustion_coroutine			;
+
+// = = =
+
+// = = = [ VARIABLES PROPERTIES ] = = =
+
+	public	float	Health
+	{
+		get { return health; }
+		set 
+		{ 
+			if (value > 0) { health = Mathf.Min(value, linked_character_data.max_health); }
+			else { health = 0; Debug.LogWarning("DEAD DEAD DEAD!!!"); }
+		}
+	}
+
+	public	float	Stamina
+	{
+		get { return stamina; }
+		set 
+		{ 
+			if (value > 0) { stamina = Mathf.Min(value, linked_character_data.max_stamina); }
+			else { stamina = 0; TriggerExhaustion(1f); Debug.LogWarning("EXHAUSTION!!!"); }
+		}
+	}
 
 // = = =
 
@@ -20,13 +53,22 @@ public class scr_battle_script : MonoBehaviour
 
 	void Start () 
 	{
+
+		// initialize character vitals
+		Health = linked_character_data.max_health;
+		Stamina = linked_character_data.max_stamina;
 		
 	}
 	
 	// INPUTS SHOULD BE HANDLED IN THE "PLAYER_CONTROLLER" SCRIPT
 	void Update () 
 	{
-		
+		// = = Stamina regeneration = =
+		if (is_exhausted == false && is_attacking == false && Stamina < linked_character_data.max_stamina)
+		{
+			Stamina += (linked_character_data.stamina_regen * Time.deltaTime);
+		}
+		// = =
 	}
 
 // = = =
@@ -42,13 +84,14 @@ public class scr_battle_script : MonoBehaviour
 		if (skill_array != last_skill_array) { ResetCombo(); }
 
 		// launch skill if stamina != 0
-		if (linked_character_data.stamina > 0)
+		if (Stamina > 0)
 		{
 			LaunchSkill(skill_array[actual_combo]);
 		}
 		else 
 		{ 
 			Debug.Log("NO STAMINA"); 
+			return;
 		}
 
 		// increment actual_combo
@@ -69,7 +112,7 @@ public class scr_battle_script : MonoBehaviour
 	public void LaunchSkill(int skill_index)
 	{
 		// launch skill
-		DataManager.instance.data_skill_Dict[skill_index].LaunchSkill();
+		DataManager.instance.data_skill_Dict[skill_index].LaunchSkill(this.gameObject);
 
 		// consume stamina
 		ConsumeStamina(DataManager.instance.data_skill_Dict[skill_index].stamina_cost);
@@ -105,13 +148,44 @@ public class scr_battle_script : MonoBehaviour
 	public void ConsumeStamina(int amount)
 	{
 		// update character's stamina 
-		linked_character_data.stamina = Mathf.Max(0, linked_character_data.stamina - amount);
-
-		// Trigger exhaustion if stamina has reached 0
-		if (linked_character_data.stamina <= 0) { Debug.Log("EXHAUSTION!"); }
+		Stamina = Mathf.Max(0, Stamina - amount);
 
 		return;
 	}
+
+	/// <summary>
+	/// Sets the character as exhausted, briefly stopping its stamina regeneration. Triggering this method while the coroutine is still running will reset the exhaustion time to 0, and will only take into account the NEW DURATION!
+	/// </summary>
+	public	void TriggerExhaustion(float duration)
+	{
+		if (exhaustion_coroutine != null) { StopCoroutine(exhaustion_coroutine); }
+		exhaustion_coroutine = StartCoroutine("ExhaustionCoroutine", 1f);
+		return;
+	}
+
+	/// <summary>
+	/// Exhaustion coroutine. Sets the character as exhausted for a given time.
+	/// </summary>
+	public IEnumerator ExhaustionCoroutine(float duration)
+	{
+		is_exhausted = true;
+
+		yield return new WaitForSeconds(duration);
+
+		is_exhausted = false;
+		yield return null;
+	}
+
+	/// <summary>
+	/// Applies damage from a given damageCollider.
+	/// </summary>
+	void TakeDamageFromCollider(scr_damageCollider damageCollider)
+	{
+		Health -= damageCollider.damage_value;
+		Debug.Log("HIT TAKEN! <b>" + damageCollider.damage_value + " damages taken!</b>");
+		return;
+	}
+
 
 // = = =
 

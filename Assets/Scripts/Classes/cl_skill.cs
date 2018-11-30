@@ -26,7 +26,7 @@ public class cl_skill
     public  enum_skill_element      element                         ;
 
 [Space(10)][Header("Attributes")]
-    public  GameObject              damage_collider                 ;
+    public  int                     damage_collider_index           ;
     public  bool                    can_be_interrupted              ;
     public  bool                    can_interrupt                   ;
 
@@ -38,8 +38,14 @@ public class cl_skill
     /// <summary>
     /// [PARENT] Launches the skill's script.
     /// </summary>
-    public virtual void LaunchSkill()
+    public virtual void LaunchSkill(GameObject instigator)
     {
+        GameObject damageCollider;
+        scr_damageCollider damageCollider_script;
+
+        damageCollider = Object.Instantiate(DataManager.instance.damageCollider_prefab_list[damage_collider_index], new Vector2 (instigator.transform.position.x, instigator.transform.position.y + 0.1f), Quaternion.identity);
+        damageCollider_script = damageCollider.GetComponent<scr_damageCollider>();
+        damageCollider_script.Initialize(instigator, this);
         // Debug.Log("Parent LaunchSkill launched!");
         return;
     }
