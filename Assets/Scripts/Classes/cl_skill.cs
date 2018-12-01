@@ -38,7 +38,15 @@ public class cl_skill
     /// <summary>
     /// [PARENT] Launches the skill's script.
     /// </summary>
-    public virtual void LaunchSkill(GameObject instigator)
+    public virtual IEnumerator LaunchSkill(GameObject instigator)
+    {
+        yield return null;
+    }
+
+    /// <summary>
+    /// [PARENT] Spawns and initializes the damage collider.
+    /// </summary>
+    public void SpawnDamageCollider(GameObject instigator)
     {
         GameObject damageCollider;
         scr_damageCollider damageCollider_script;
@@ -47,6 +55,7 @@ public class cl_skill
         damageCollider_script = damageCollider.GetComponent<scr_damageCollider>();
         damageCollider_script.Initialize(instigator, this);
         // Debug.Log("Parent LaunchSkill launched!");
+
         return;
     }
 

@@ -18,6 +18,7 @@ public class scr_battle_script : MonoBehaviour
 	public		float						shoot_cooldown					;
 	public		bool						is_exhausted					;
 	public		bool						is_attacking					;
+	public		IEnumerator					ongoing_skill_coroutine			;
 
 [Space(10)][Header("References")]
 	public 		cl_character_data 			linked_character_data			;
@@ -112,7 +113,9 @@ public class scr_battle_script : MonoBehaviour
 	public void LaunchSkill(int skill_index)
 	{
 		// launch skill
-		DataManager.instance.data_skill_Dict[skill_index].LaunchSkill(this.gameObject);
+		// DataManager.instance.data_skill_Dict[skill_index].LaunchSkill(this.gameObject);
+		ongoing_skill_coroutine = DataManager.instance.data_skill_Dict[skill_index].LaunchSkill(this.gameObject);
+		StartCoroutine(ongoing_skill_coroutine);
 
 		// consume stamina
 		ConsumeStamina(DataManager.instance.data_skill_Dict[skill_index].stamina_cost);

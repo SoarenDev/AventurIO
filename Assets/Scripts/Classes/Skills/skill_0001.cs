@@ -30,13 +30,13 @@ public class skill_0001 : cl_skill
 
 // = = = [ CLASS METHODS ] = = =
 
-    public override void LaunchSkill(GameObject instigator)
+    public override IEnumerator LaunchSkill(GameObject instigator)
     {
-        base.LaunchSkill(instigator);
+        SpawnDamageCollider(instigator);
 
         Debug.Log("SKILL: <b>" + name + "</b> launched!");
 
-        return;
+        yield return null;
     }
 
 // = = =
