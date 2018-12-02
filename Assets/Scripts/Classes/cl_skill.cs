@@ -38,7 +38,7 @@ public class cl_skill
     /// <summary>
     /// [PARENT] Launches the skill's script.
     /// </summary>
-    public virtual IEnumerator LaunchSkill(GameObject instigator)
+    public virtual IEnumerator LaunchSkill(scr_battle_script instigator)
     {
         yield return null;
     }
@@ -58,6 +58,11 @@ public class cl_skill
 
         return;
     }
+
+    /// <summary>
+    /// [PARENT] Forces a defined movement to the instigator. 
+    /// </summary>
+    public virtual void SkillMovement(scr_battle_script instigator){}
 
 // = = =
 	

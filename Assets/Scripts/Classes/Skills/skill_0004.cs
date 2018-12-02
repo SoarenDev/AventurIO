@@ -30,13 +30,28 @@ public class skill_0004 : cl_skill
 
 // = = = [ CLASS METHODS ] = = =
 
-    public override IEnumerator LaunchSkill(GameObject instigator)
+    public override IEnumerator LaunchSkill(scr_battle_script instigator)
     {
-        SpawnDamageCollider(instigator);
+        // START SKILL
+        instigator.is_attacking = true;
+
+        // SKILL MOVEMENT
+        SkillMovement(instigator);
+
+        // SPAWN COLLIDER
+        SpawnDamageCollider(instigator.gameObject);
 
         Debug.Log("SKILL: <b>" + name + "</b> launched!");
 
+        // END SKILL
+        instigator.is_attacking = false;
         yield return null;
+    }
+
+    public override void SkillMovement(scr_battle_script instigator)
+    {
+        // none
+        return;
     }
 
 // = = =

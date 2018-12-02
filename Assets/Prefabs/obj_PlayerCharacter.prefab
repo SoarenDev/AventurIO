@@ -151,12 +151,7 @@ MonoBehaviour:
     luck: 0
     health_regen: 0
     stamina_regen: 5
-    health: 30
-    stamina: 30
     weapon: {fileID: 11400000, guid: 5721a402443950241a8cac1dba7c5207, type: 2}
-    shoot_cooldown: 0
-    is_exhausted: 0
-    linked_battle_script: {fileID: 114419607389190658}
   gold: 0
   gold_ui_trans_value: 0
   player_controller: {fileID: 114829997172982436}
@@ -188,6 +183,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actual_combo: 0
   last_skill_array: 
+  health: 30
+  stamina: 30
+  shoot_cooldown: 0
+  is_exhausted: 0
+  is_attacking: 0
   linked_character_data:
     max_health: 30
     max_stamina: 30
@@ -201,12 +201,8 @@ MonoBehaviour:
     luck: 0
     health_regen: 0
     stamina_regen: 5
-    health: 30
-    stamina: 30
     weapon: {fileID: 11400000, guid: 5721a402443950241a8cac1dba7c5207, type: 2}
-    shoot_cooldown: 0
-    is_exhausted: 0
-    linked_battle_script: {fileID: 0}
+  rigidbody_reference: {fileID: 50767259758179090}
 --- !u!114 &114829997172982436
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -207,6 +207,7 @@ MonoBehaviour:
     health_regen: 0
     stamina_regen: 5
     weapon: {fileID: 0}
+  rigidbody_reference: {fileID: 50371063705594048}
 --- !u!212 &212044366696412808
 SpriteRenderer:
   m_ObjectHideFlags: 1

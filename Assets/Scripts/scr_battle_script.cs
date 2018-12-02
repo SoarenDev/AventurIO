@@ -22,6 +22,7 @@ public class scr_battle_script : MonoBehaviour
 
 [Space(10)][Header("References")]
 	public 		cl_character_data 			linked_character_data			;
+	public		Rigidbody2D					rigidbody_reference				;
 	private		Coroutine					exhaustion_coroutine			;
 
 // = = =
@@ -114,7 +115,7 @@ public class scr_battle_script : MonoBehaviour
 	{
 		// launch skill
 		// DataManager.instance.data_skill_Dict[skill_index].LaunchSkill(this.gameObject);
-		ongoing_skill_coroutine = DataManager.instance.data_skill_Dict[skill_index].LaunchSkill(this.gameObject);
+		ongoing_skill_coroutine = DataManager.instance.data_skill_Dict[skill_index].LaunchSkill(this);
 		StartCoroutine(ongoing_skill_coroutine);
 
 		// consume stamina
@@ -188,7 +189,6 @@ public class scr_battle_script : MonoBehaviour
 		Debug.Log("HIT TAKEN! <b>" + damageCollider.damage_value + " damages taken!</b>");
 		return;
 	}
-
 
 // = = =
 

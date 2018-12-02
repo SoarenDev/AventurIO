@@ -37,26 +37,32 @@ public class PlayerController : MonoBehaviour
 	{
 		// = = = BATTLE = = =
 
-		if (Input.GetKeyDown(KeyCode.T))
+		// check if player is not attacking
+		if (player_script.player_battle_script.is_attacking == false)
 		{
-			player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_base_index);
-		} 
-		else if (Input.GetKeyDown(KeyCode.Y))
-		{
-			player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_secondary_index);
+			// check battle input recieved
+			if (Input.GetKeyDown(KeyCode.T))
+			{
+				player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_base_index);
+			} 
+			else if (Input.GetKeyDown(KeyCode.Y))
+			{
+				player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_secondary_index);
+			}
+			else if (Input.GetKeyDown(KeyCode.U))
+			{
+				player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_special_1_index);
+			}
+			else if (Input.GetKeyDown(KeyCode.I))
+			{
+				player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_special_2_index);
+			}
+			else if (Input.GetKeyDown(KeyCode.O))
+			{
+				player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_ultimate_index);
+			}
 		}
-		else if (Input.GetKeyDown(KeyCode.U))
-		{
-			player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_special_1_index);
-		}
-		else if (Input.GetKeyDown(KeyCode.I))
-		{
-			player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_special_2_index);
-		}
-		else if (Input.GetKeyDown(KeyCode.O))
-		{
-			player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_ultimate_index);
-		}
+			
 
 		// = = = MOVEMENT = = =
 
