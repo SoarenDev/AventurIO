@@ -50,7 +50,8 @@ public class skill_0003 : cl_skill
 
     public override void SkillMovement(scr_battle_script instigator)
     {
-        instigator.transform.Translate(new Vector2(0, 0.15f));
+        Vector2 movement_direction = instigator.GetCharacterActionDirection(enum_character_type.player);
+        instigator.transform.Translate(new Vector2(0.20f * movement_direction.x, 0.20f * movement_direction.y));
         return;
     }
 

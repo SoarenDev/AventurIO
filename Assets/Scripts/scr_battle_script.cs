@@ -190,6 +190,44 @@ public class scr_battle_script : MonoBehaviour
 		return;
 	}
 
+	/// <summary>
+	/// Returns a normalized vector that indicates the direction of a action.
+	/// Note that launching this method with a player "chara_type" will get the Movement Axis value, while launching it with a "IA" chara_type will launch the "GetTargetDirection" method.
+	/// </summary>
+	public Vector2 GetCharacterActionDirection(enum_character_type chara_type)
+	{
+		Vector2 direction_vector = new Vector2(0,-1);
+
+		switch (chara_type)
+		{
+			case enum_character_type.player:
+
+				// check if player has specify a direction
+				if (Input.GetAxis("AX_MoveX") + Input.GetAxis("AX_MoveY") != 0)
+				{
+					// normalize combined axis inputs' value
+					float normalize_factor;  // factor used to normalise the vector
+					direction_vector.x = Input.GetAxis("AX_MoveX");
+					direction_vector.y = -Input.GetAxis("AX_MoveY");
+					normalize_factor = Mathf.Abs(direction_vector.x) + Mathf.Abs(direction_vector.y);
+					
+					// return normalized direction vector
+					return (direction_vector / normalize_factor);
+				}
+				else
+				{
+					// return default direction
+					return new Vector2(0,1);
+				}
+
+			case enum_character_type.IA:
+				
+			default: 
+				Debug.LogError("GetCharacterActionDirection returns with error: Undefined parameter!"); 
+				return new Vector2(0,0);
+		}
+	}
+
 // = = =
 
 

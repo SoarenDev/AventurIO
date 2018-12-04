@@ -11,6 +11,12 @@ using UnityEngine;
 // 	public int			local_size	;
 // }
 
+public enum enum_character_type
+{
+	player,
+	IA
+}
+
 [System.Serializable]
 public struct struct_event_indexXowner { // event manager
 
