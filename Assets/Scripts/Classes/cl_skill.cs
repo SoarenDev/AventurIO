@@ -46,12 +46,12 @@ public class cl_skill
     /// <summary>
     /// [PARENT] Spawns and initializes the damage collider.
     /// </summary>
-    public void SpawnDamageCollider(GameObject instigator)
+    public void SpawnDamageCollider(GameObject instigator, Vector2 direction_vector)
     {
         GameObject damageCollider;
         scr_damageCollider damageCollider_script;
 
-        damageCollider = Object.Instantiate(DataManager.instance.damageCollider_prefab_list[damage_collider_index], new Vector2 (instigator.transform.position.x, instigator.transform.position.y + 0.1f), Quaternion.identity);
+        damageCollider = Object.Instantiate(DataManager.instance.damageCollider_prefab_list[damage_collider_index], new Vector2 (instigator.transform.position.x + (0.2f*direction_vector.x), instigator.transform.position.y + (0.2f*direction_vector.y)), Quaternion.identity);
         damageCollider_script = damageCollider.GetComponent<scr_damageCollider>();
         damageCollider_script.Initialize(instigator, this);
         // Debug.Log("Parent LaunchSkill launched!");
@@ -62,7 +62,7 @@ public class cl_skill
     /// <summary>
     /// [PARENT] Forces a defined movement to the instigator. 
     /// </summary>
-    public virtual void SkillMovement(scr_battle_script instigator){}
+    public virtual void SkillMovement(scr_battle_script instigator, Vector2 direction_vector){}
 
 // = = =
 	

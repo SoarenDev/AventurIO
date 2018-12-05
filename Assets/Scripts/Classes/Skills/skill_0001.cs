@@ -35,11 +35,14 @@ public class skill_0001 : cl_skill
         // START SKILL
         instigator.is_attacking = true;
 
+        // get action direction
+        Vector2 action_direction = instigator.GetCharacterActionDirection(enum_character_type.player);
+
         // SKILL MOVEMENT
-        SkillMovement(instigator);
+        SkillMovement(instigator, action_direction);
 
         // SPAWN COLLIDER
-        SpawnDamageCollider(instigator.gameObject);
+        SpawnDamageCollider(instigator.gameObject, action_direction);
 
         Debug.Log("SKILL: <b>" + name + "</b> launched!");
         yield return new WaitForSeconds(1f);
@@ -49,10 +52,9 @@ public class skill_0001 : cl_skill
         yield return null;
     }
 
-    public override void SkillMovement(scr_battle_script instigator)
+    public override void SkillMovement(scr_battle_script instigator, Vector2 direction_vector)
     {
-        Vector2 movement_direction = instigator.GetCharacterActionDirection(enum_character_type.player);
-        instigator.transform.Translate(new Vector2(0.10f * movement_direction.x, 0.10f * movement_direction.y));
+        instigator.transform.Translate(new Vector2(0.10f * direction_vector.x, 0.10f * direction_vector.y));
         return;
     }
 

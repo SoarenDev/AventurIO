@@ -18,6 +18,7 @@ public class scr_battle_script : MonoBehaviour
 	public		float						shoot_cooldown					;
 	public		bool						is_exhausted					;
 	public		bool						is_attacking					;
+	public		bool						is_interruptible				;
 	public		IEnumerator					ongoing_skill_coroutine			;
 
 [Space(10)][Header("References")]
@@ -226,6 +227,18 @@ public class scr_battle_script : MonoBehaviour
 				Debug.LogError("GetCharacterActionDirection returns with error: Undefined parameter!"); 
 				return new Vector2(0,0);
 		}
+	}
+
+	/// <summary>
+	/// Interrupts the ongoing skill if its "can_be_interrupted" is true.
+	/// </summary>
+	public void InterruptAction()
+	{
+		StopCoroutine(ongoing_skill_coroutine);
+		is_attacking = false;
+		
+		Debug.Log("INTERRUPTED");
+		return;
 	}
 
 // = = =
