@@ -49,45 +49,47 @@ public class PlayerController : MonoBehaviour
 	void Update () 
 	{
 		// = = = BATTLE = = =
-
-		// check if player is not attacking
-		if (player_script.player_battle_script.is_attacking == false)
+		if (controller_mode == enum_controller_mode.interior)
 		{
-			// check battle input recieved
-			if (Input.GetAxisRaw("AX_A") != 0 && axis_consumed_dict["a"] == false)
+			// check if player is not attacking
+			if (player_script.player_battle_script.is_attacking == false)
 			{
-				player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_base_index);
-				axis_consumed_dict["a"] = true;
-			} 
-			else if (Input.GetAxisRaw("AX_A") == 0) { axis_consumed_dict["a"] = false; }
+				// check battle input recieved
+				if (Input.GetAxisRaw("AX_A") != 0 && axis_consumed_dict["a"] == false)
+				{
+					player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_base_index);
+					axis_consumed_dict["a"] = true;
+				} 
+				else if (Input.GetAxisRaw("AX_A") == 0) { axis_consumed_dict["a"] = false; }
 
-			if (Input.GetAxisRaw("AX_B") != 0 && axis_consumed_dict["b"] == false)
-			{
-				player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_secondary_index);
-				axis_consumed_dict["b"] = true;
-			}
-			else if (Input.GetAxisRaw("AX_B") == 0) { axis_consumed_dict["b"] = false; }
+				if (Input.GetAxisRaw("AX_B") != 0 && axis_consumed_dict["b"] == false)
+				{
+					player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_secondary_index);
+					axis_consumed_dict["b"] = true;
+				}
+				else if (Input.GetAxisRaw("AX_B") == 0) { axis_consumed_dict["b"] = false; }
 
-			if (Input.GetAxisRaw("AX_Y") != 0 && axis_consumed_dict["y"] == false)
-			{
-				player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_special_1_index);
-				axis_consumed_dict["y"] = true;
-			}
-			else if (Input.GetAxisRaw("AX_Y") == 0) { axis_consumed_dict["y"] = false; }
+				if (Input.GetAxisRaw("AX_Y") != 0 && axis_consumed_dict["y"] == false)
+				{
+					player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_special_1_index);
+					axis_consumed_dict["y"] = true;
+				}
+				else if (Input.GetAxisRaw("AX_Y") == 0) { axis_consumed_dict["y"] = false; }
 
-			if (Input.GetAxisRaw("AX_X") != 0 && axis_consumed_dict["x"] == false)
-			{
-				player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_special_2_index);
-				axis_consumed_dict["x"] = true;
-			}
-			else if (Input.GetAxisRaw("AX_X") == 0) { axis_consumed_dict["x"] = false; }
+				if (Input.GetAxisRaw("AX_X") != 0 && axis_consumed_dict["x"] == false)
+				{
+					player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_special_2_index);
+					axis_consumed_dict["x"] = true;
+				}
+				else if (Input.GetAxisRaw("AX_X") == 0) { axis_consumed_dict["x"] = false; }
 
-			if (Input.GetAxisRaw("AX_RT") != 0 && axis_consumed_dict["rt"] == false)
-			{
-				player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_ultimate_index);
-				axis_consumed_dict["rt"] = true;
+				if (Input.GetAxisRaw("AX_RT") != 0 && axis_consumed_dict["rt"] == false)
+				{
+					player_script.player_battle_script.SelectSkill(player_script.player_character_data.weapon.skill_ultimate_index);
+					axis_consumed_dict["rt"] = true;
+				}
+				else if (Input.GetAxisRaw("AX_RT") == 0) { axis_consumed_dict["rt"] = false; }
 			}
-			else if (Input.GetAxisRaw("AX_RT") == 0) { axis_consumed_dict["rt"] = false; }
 		}
 			
 		// = = = MOVEMENT = = =

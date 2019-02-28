@@ -188,6 +188,7 @@ MonoBehaviour:
   shoot_cooldown: 0
   is_exhausted: 0
   is_attacking: 0
+  is_interruptible: 0
   linked_character_data:
     max_health: 30
     max_stamina: 30
